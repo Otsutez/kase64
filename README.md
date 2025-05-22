@@ -26,14 +26,17 @@ scheduling algorithm: https://en.wikipedia.org/wiki/RC4
 ```
 
 ## Example
+Normal Base64 encoding
 ```bash
-# Normal Base64 encoding
 echo -n "Many hands make light work." | ./kase64.py
+```
 
-# Base64 encryption using a key
+Base64 encryption using a key
+```bash
 echo -n "Many hands make light work." | ./kase64.py -k secret_key
+```
 
-# Decryption using a key
+Decryption using a key
+```bash
 echo -n "a8qtnpZlN8EOLKZ1N815o6Ixy/PQoReFLCht" | ./kase64.py -d -k secret_key
-  
 ```
